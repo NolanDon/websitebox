@@ -28,7 +28,13 @@ const HomePageHeader = () => {
       <Divider />
       <Typography className={classes.name}>HI, I'M NOLAN.</Typography>
       <Typist className={classes.paragraph}>
-        Full Stack Developer from Calgary, Alberta.
+        Full Stack Developer from Calgary, Antarctica.
+        <Typist.Backspace count={10} delay={200} />
+        Albe.
+        <Typist.Backspace count={6} delay={200} />
+        Ugh.
+        <Typist.Backspace count={6} delay={200} />
+        .
       </Typist>
     </Grid>
   );
