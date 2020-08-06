@@ -37,25 +37,25 @@ const HomePage = () => {
       image: "https://user-images.githubusercontent.com/48977789/73147349-423e8900-4074-11ea-83dd-4291b6a44604.png",
       hyperlink: "https://github.com/NolanDon/Junglefy",
       description: "built with ruby on rails, book trading app",
-    },
-    {
-      title: "title",
-      image: "image",
-      hyperlink: "hyperlink",
-      description: "description",
-    },
-    {
-      title: "title",
-      image: "image",
-      hyperlink: "hyperlink",
-      description: "description",
-    },
-    {
-      title: "title",
-      image: "image",
-      hyperlink: "hyperlink",
-      description: "description",
-    },
+    }
+    // {
+    //   title: "title",
+    //   image: "image",
+    //   hyperlink: "hyperlink",
+    //   description: "description",
+    // },
+    // {
+    //   title: "title",
+    //   image: "image",
+    //   hyperlink: "hyperlink",
+    //   description: "description",
+    // },
+    // {
+    //   title: "title",
+    //   image: "image",
+    //   hyperlink: "hyperlink",
+    //   description: "description",
+    // },
   ];
   return (
       <Box>
