@@ -5,6 +5,7 @@ function App() {
   return (
     <div className="App">
      nolan's website
+     continuous integration
     </div>
   );
 }
