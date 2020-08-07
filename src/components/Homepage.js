@@ -4,7 +4,7 @@ import { Box, Divider, Typography } from "@material-ui/core";
 import PersistentSideBar from "./PersistentSideBar";
 import HomePageHeader from "./HomePageHeader";
 import { makeStyles } from "@material-ui/core/styles";
-import ProjectCard from "./ProjectDisplayCard";
+// import ProjectCard from "./ProjectDisplayCard";
 
 const useStyles = makeStyles({
   body: {
@@ -75,7 +75,7 @@ const HomePage = () => {
                 {item.title}
                 </Typography>
               <Typography>
-              <img src={item.image} alt="Italian Trulli" className={classes.image} />
+              {/* <img src={item.image} alt="Italian Trulli" className={classes.image} /> */}
               </Typography>
               <Typography>
               <a href={item.hyperlink} target="_blank">
