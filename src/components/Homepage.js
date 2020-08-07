@@ -12,11 +12,11 @@ const useStyles = makeStyles({
     justifyContent: "center",
   },
   card: {
-    textAlign: 'center',
     display: "flex",
-    justifyContent: "center",
+    justifyContent: "flex-start",
     flexDirection: "column",
-    paddingTop: "100px",
+    padding: "140px",
+
   },
   cardTitle: {
     padding: '15px',
