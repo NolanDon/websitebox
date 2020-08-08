@@ -33,9 +33,7 @@ const HomePageHeader = () => {
         Albe.
         <Typist.Backspace count={6} delay={200} />
         Albsrta.
-        <Typist.Backspace count={8} delay={200} />
-        Ugh
-        <Typist.Backspace count={5} delay={200} />
+        <Typist.Backspace count={10} delay={200} />
         . 
       </Typist>
     </Grid>
