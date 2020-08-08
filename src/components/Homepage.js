@@ -3,7 +3,6 @@ import React from "react";
 import { makeStyles, Box, Typography } from "@material-ui/core";
 import PersistentSideBar from "./PersistentSideBar";
 import HomePageHeader from "./HomePageHeader";
-// import { makeStyles } from "@material-ui/core/styles";
 import ProjectCard from "./ProjectDisplayCard";
 
 const useStyles = makeStyles({
