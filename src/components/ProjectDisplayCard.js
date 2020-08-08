@@ -1,36 +1,51 @@
 import React from "react";
 import { makeStyles, Typography } from "@material-ui/core";
+import { projects } from "./Projects";
 
 const useStyles = makeStyles({
   card: {
-      display: 'flex',
-      justifyContent: 'center'
+    display: "flex",
+    flexDirection: "column",
+    padding: "200px",
+    justifyContent: 'center',
+    // textAlign: 'center',
+    paddingTop: '25%'
   },
-  title: {},
-  image: {},
-  hyperlink: {},
-  description: {},
+  cardTitle: {
+    padding: "15px",
+    fontSize: "20px",
+  },
+  image: {
+    width: "680px",
+    height: "400px",
+    filter: "drop-shadow(10px 10px 10px #222)",
+  },
 });
-const ProjectCard = (props) => {
+
+const ProjectCard = () => {
   const classes = useStyles();
 
-  props.map((item) => {
-      console.log(item)
+  return projects.map((item) => {
     return (
-      <div className={classes.card}>
-        <div>
-            <Typography>
-          {item.title}
-          </Typography>
+      <div>
+        <div className={classes.card}>
+          <Typography className={classes.cardTitle}>{item.title}</Typography>
           <Typography>
-          {item.image}
+            <img
+              src={item.image}
+              alt="Italian Trulli"
+              className={classes.image}
+            />
           </Typography>
-          <Typography>
-          {item.hyperlink}
-          </Typography>
-          <Typography>
-          {item.description}
-          </Typography>
+          <Typography className={classes.cardTitle}>
+                <a href={item.hyperlink} target="_blank">
+                  view source code
+                </a>
+              </Typography>
+              <Typography className={classes.cardTitle}>
+                {item.description}
+              </Typography>
+          
         </div>
       </div>
     );
