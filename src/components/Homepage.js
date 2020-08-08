@@ -3,12 +3,11 @@ import React from "react";
 import { makeStyles, Box } from "@material-ui/core";
 import PersistentSideBar from "./PersistentSideBar";
 import HomePageHeader from "./HomePageHeader";
-import ProjectCard from "./ProjectDisplayCard";
 
 const useStyles = makeStyles({
   body: {
     display: "flex",
-    justifyContent: "center",
+    justifyContent: "flex-start",
   }
 });
 
@@ -21,7 +20,6 @@ const HomePage = () => {
         <PersistentSideBar />
         <HomePageHeader />
       </Box>
-        <ProjectCard />
     </Box>
   );
 };
