@@ -18,7 +18,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import FaceIcon from '@material-ui/icons/Face';
 
-const drawerWidth = 165;
+const drawerWidth = 60;
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -37,12 +37,12 @@ const useStyles = makeStyles((theme) => ({
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.easeOut,
       duration: theme.transitions.duration.enteringScreen,
-      backgroundColor: '#95876c'
+      backgroundColor: 'white'
     }),
   },
   menuButton: {
     marginRight: theme.spacing(2),
-    color: '#987e5a'
+    color: 'white'
   },
   hide: {
     display: 'none',
@@ -51,10 +51,13 @@ const useStyles = makeStyles((theme) => ({
     width: drawerWidth,
     flexShrink: 0,
   },
+  icon: {
+    color: 'white'
+  },
   drawerPaper: {
-    color: 	'black',
+    color: 	'white',
     width: drawerWidth,
-    backgroundColor: '#e6cc8e',
+    backgroundColor: 'black',
   },
   drawerHeader: {
     display: 'flex',
@@ -64,7 +67,6 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'flex-end',
   },
   content: {
- 
     flexGrow: 1,
     padding: theme.spacing(3),
     transition: theme.transitions.create('margin', {
@@ -85,7 +87,7 @@ const useStyles = makeStyles((theme) => ({
 export default function PersistentDrawerLeft() {
   const classes = useStyles();
   const theme = useTheme();
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(true);
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -96,13 +98,11 @@ export default function PersistentDrawerLeft() {
   };
 
   const IconSelector = (index) => { 
-    console.log('iconselector', index)
     const icons = {
-      0: <LinkedInIcon />,
-      1: <GitHubIcon />,
-      2: <FaceIcon />
+      0: <LinkedInIcon onClick={() =>{ window.open('https://www.linkedin.com/in/nolan-boxill/','_blank') }}/>,
+      1: <GitHubIcon onClick={() =>{ window.open('https://github.com/NolanDon','_blank')}}/>,
+      2: <FaceIcon onClick={() =>{ window.open('https://github.com/NolanDon','_blank')}}/>
     }
-
     return icons[index]
   }
 
@@ -115,7 +115,7 @@ export default function PersistentDrawerLeft() {
           [classes.appBarShift]: open,
         })}
       >
-        <Toolbar style={{ background: 'linear-gradient( 0.25turn, #e6cc8e,#e6cc8e, #e6cc8e)' }}>
+        <Toolbar style={{ background: 'black' }}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -143,9 +143,9 @@ export default function PersistentDrawerLeft() {
         </div>
         <Divider />
         <List>
-          {['LinkedIn','Github', 'Portfolio'].map((text, index) => (
+          {['',''].map((text, index) => (
             <ListItem button key={text}>
-              <ListItemIcon>
+              <ListItemIcon className={classes.icon}>
                 {IconSelector(index) } 
               </ListItemIcon>
               <ListItemText primary={text} />
