@@ -20,9 +20,6 @@ const HomePage = () => {
       <Box className={classes.body}>
         <PersistentSideBar />
         <HomePageHeader />
-        <Typography>
-          Scroll down to view my Projects
-        </Typography>
       </Box>
         <ProjectCard />
     </Box>
