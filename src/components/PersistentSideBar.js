@@ -6,7 +6,6 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import List from '@material-ui/core/List';
-// import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -18,9 +17,8 @@ import ListItemText from '@material-ui/core/ListItemText';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import FaceIcon from '@material-ui/icons/Face';
-import AccountTreeIcon from '@material-ui/icons/AccountTree';
 
-const drawerWidth = 240;
+const drawerWidth = 165;
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -62,7 +60,6 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     padding: theme.spacing(0, 1),
-    // necessary for content to be below app bar
     ...theme.mixins.toolbar,
     justifyContent: 'flex-end',
   },
@@ -98,6 +95,17 @@ export default function PersistentDrawerLeft() {
     setOpen(false);
   };
 
+  const IconSelector = (index) => { 
+    console.log('iconselector', index)
+    const icons = {
+      0: <LinkedInIcon />,
+      1: <GitHubIcon />,
+      2: <FaceIcon />
+    }
+
+    return icons[index]
+  }
+
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -117,8 +125,6 @@ export default function PersistentDrawerLeft() {
           >
             <MenuIcon />
           </IconButton>
-          {/* <Typography variant="h6" noWrap>
-          </Typography> */}
         </Toolbar>
       </AppBar>
       <Drawer
@@ -137,21 +143,11 @@ export default function PersistentDrawerLeft() {
         </div>
         <Divider />
         <List>
-          {['About Me', 'LinkedIn'].map((text, index) => (
+          {['LinkedIn','Github', 'Portfolio'].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon>
-          {index === 0 ? <FaceIcon /> : <LinkedInIcon /> } 
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List>
-        <Divider />
-        <List>
-          {['Github', 'Portfolio'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>
-          {index === 0 ? <GitHubIcon /> : <AccountTreeIcon /> } 
+                {console.log(text,index)}
+                {IconSelector(index) } 
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
