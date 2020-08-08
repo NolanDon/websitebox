@@ -6,8 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   background-image: url("barkleaf.jpg");
   background-size: cover;
+  background-repeat:no-repeat;
+  height: 100vh;
   -moz-osx-font-smoothing: grayscale;
-  border-right: 50px solid black;
 }
 
 code {
