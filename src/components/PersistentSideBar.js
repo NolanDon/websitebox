@@ -146,7 +146,6 @@ export default function PersistentDrawerLeft() {
           {['LinkedIn','Github', 'Portfolio'].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon>
-                {console.log(text,index)}
                 {IconSelector(index) } 
               </ListItemIcon>
               <ListItemText primary={text} />
