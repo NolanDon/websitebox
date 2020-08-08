@@ -4,8 +4,10 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-color: lemonchiffon !important ;
+  background-image: url("barkleaf.jpg");
+  background-size: cover;
   -moz-osx-font-smoothing: grayscale;
+  border-right: 50px solid black;
 }
 
 code {
