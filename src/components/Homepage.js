@@ -1,6 +1,6 @@
 import React from "react";
 
-import { makeStyles, Box, Typography } from "@material-ui/core";
+import { makeStyles, Box } from "@material-ui/core";
 import PersistentSideBar from "./PersistentSideBar";
 import HomePageHeader from "./HomePageHeader";
 import ProjectCard from "./ProjectDisplayCard";
