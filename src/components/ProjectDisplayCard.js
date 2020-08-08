@@ -8,7 +8,6 @@ const useStyles = makeStyles({
     flexDirection: "column",
     padding: "200px",
     justifyContent: 'center',
-    // textAlign: 'center',
     paddingTop: '25%'
   },
   cardTitle: {
@@ -38,7 +37,7 @@ const ProjectCard = () => {
             />
           </Typography>
           <Typography className={classes.cardTitle}>
-                <a href={item.hyperlink} target="_blank">
+                <a href={item.hyperlink} rel="noopener noreferrer" target="_blank">
                   view source code
                 </a>
               </Typography>
