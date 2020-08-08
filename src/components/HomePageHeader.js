@@ -4,6 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 import Typist from "react-typist";
+import CustomizedDialogs from './setDialogOpen';
 
 const useStyles = makeStyles((theme) => ({
   name: {
@@ -11,12 +12,14 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: "100px",
     fontSize: "50px",
     fontFamily: "Caslon",
+    color: 'white'
   },
   paragraph: {
     display: "flex",
     paddingTop: "40px",
     fontFamily: "Caslon",
     fontSize: "20px",
+    color: 'white'
   },
 }));
 
@@ -28,14 +31,9 @@ const HomePageHeader = () => {
       <Divider />
       <Typography className={classes.name}>HI, I'M NOLAN.</Typography>
       <Typist className={classes.paragraph}>
-        Full Stack Developer from Calgary, Antarctica.
-        <Typist.Backspace count={10} delay={200} />
-        Albe.
-        <Typist.Backspace count={6} delay={200} />
-        Albsrta.
-        <Typist.Backspace count={10} delay={200} />
-        . 
+        Full Stack Developer from Calgary, Alberta.
       </Typist>
+      <CustomizedDialogs />
     </Grid>
   );
 };
