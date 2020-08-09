@@ -11,13 +11,13 @@ const useStyles = makeStyles({
     display: "flex",
     paddingTop: "100px",
     fontSize: "50px",
-    fontFamily: "Open Sans, sans-serif",
+    fontFamily: 'Baloo 2, cursive',
     color: 'white'
   },
   paragraph: {
     display: "flex",
     paddingTop: "40px",
-    fontFamily: "Open Sans, sans-serif",
+    fontFamily: 'Baloo 2, cursive',
     fontSize: "20px",
     color: 'white'
   },

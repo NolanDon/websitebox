@@ -7,7 +7,7 @@ import ProjectCard from "./ProjectDisplayCard";
 
 const useStyles = makeStyles({
   button: {
-    fontFamily: 'Open Sans, sans-serif',
+    fontFamily: 'Baloo 2, cursive',
     color: "black",
     marginTop: "40px",
   },
