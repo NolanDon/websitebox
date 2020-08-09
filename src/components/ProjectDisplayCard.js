@@ -20,7 +20,6 @@ const useStyles = makeStyles({
     height: "20px",
   },
   cardText: {
-    padding: "10px",
     fontSize: "15px",
     color: "black",
     textAlign: "center",
