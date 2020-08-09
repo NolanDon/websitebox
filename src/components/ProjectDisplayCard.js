@@ -32,15 +32,7 @@ const useStyles = makeStyles({
   },
   divider: {
     height: "4px",
-  },
-  fab: {
-    margin: "theme.spacing(2)",
-  },
-  absolute: {
-    position: "absolute",
-    bottom: "theme.spacing(2)",
-    right: "theme.spacing(3)",
-  },
+  }
 });
 
 const ProjectCard = () => {
