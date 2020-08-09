@@ -29,7 +29,7 @@ const HomePageHeader = () => {
   return (
     <Grid item xs={12} md={8}>
       <Divider />
-      <Typography className={classes.name}>HI, I'M NOLAN.</Typography>
+      <Typography className={classes.name}>HI, I'M NOLAN</Typography>
       <Typist className={classes.paragraph}>
         Full Stack Developer from Calgary, Alberta.
       </Typist>
