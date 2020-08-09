@@ -11,7 +11,7 @@ const useStyles = makeStyles({
     display: "flex",
     paddingTop: "100px",
     fontSize: "50px",
-    fontFamily: 'Open Sans',
+    fontFamily: "Open Sans, sans-serif",
     color: 'white'
   },
   paragraph: {
