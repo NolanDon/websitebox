@@ -6,22 +6,22 @@ import Divider from "@material-ui/core/Divider";
 import Typist from "react-typist";
 import CustomizedDialogs from './setDialogOpen';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
   name: {
     display: "flex",
     paddingTop: "100px",
     fontSize: "50px",
-    fontFamily: "Caslon",
+    fontFamily: 'Open Sans',
     color: 'white'
   },
   paragraph: {
     display: "flex",
     paddingTop: "40px",
-    fontFamily: "Caslon",
+    fontFamily: "Open Sans, sans-serif",
     fontSize: "20px",
     color: 'white'
   },
-}));
+});
 
 const HomePageHeader = () => {
   const classes = useStyles();
