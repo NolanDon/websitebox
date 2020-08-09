@@ -18,7 +18,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import FaceIcon from '@material-ui/icons/Face';
 
-const drawerWidth = 60;
+const drawerWidth = 65;
 
 const useStyles = makeStyles((theme) => ({
   root: {
