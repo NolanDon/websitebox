@@ -19,8 +19,8 @@ const useStyles = makeStyles({
     textAlign: 'center'
   },
   image: {
-    width: "340x",
-    height: "200px",
+    width: "80%",
+    height: "80%",
     filter: "drop-shadow(10px 10px 10px #222)",
   },
   divider: {
