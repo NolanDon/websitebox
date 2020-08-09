@@ -1,22 +1,29 @@
 import React from "react";
 import { makeStyles, Typography, Divider } from "@material-ui/core";
 import { projects } from "./Projects";
+import codeIcon from "./images/source-code.png";
+import IconButton from "@material-ui/core/IconButton";
+import Tooltip from "@material-ui/core/Tooltip";
 
 const useStyles = makeStyles({
   card: {
-    textAlign: 'center'
+    textAlign: "center",
   },
   cardTitle: {
     padding: "15px",
     fontSize: "20px",
-    color: 'black',
-    textAlign: 'center'
+    color: "black",
+    textAlign: "center",
+  },
+  icon: {
+    width: "20px",
+    height: "20px",
   },
   cardText: {
     padding: "10px",
     fontSize: "15px",
-    color: 'black',
-    textAlign: 'center'
+    color: "black",
+    textAlign: "center",
   },
   image: {
     width: "80%",
@@ -24,8 +31,16 @@ const useStyles = makeStyles({
     filter: "drop-shadow(10px 10px 10px #222)",
   },
   divider: {
-    height: '4px',
-  }
+    height: "4px",
+  },
+  fab: {
+    margin: "theme.spacing(2)",
+  },
+  absolute: {
+    position: "absolute",
+    bottom: "theme.spacing(2)",
+    right: "theme.spacing(3)",
+  },
 });
 
 const ProjectCard = () => {
@@ -43,15 +58,24 @@ const ProjectCard = () => {
               className={classes.image}
             />
           </Typography>
-          <Typography className={classes.cardText}>
-                <a href={item.hyperlink} rel="noopener noreferrer" target="_blank">
-                  view code
-                </a>
-              </Typography>
+          <Tooltip title="View Code">
+            <IconButton aria-label="View Code">
               <Typography className={classes.cardText}>
-                {item.description}
+                <img
+                  src={codeIcon}
+                  alt="Italian Trulli"
+                  className={classes.icon}
+                  onClick={() => {
+                    window.open(`${item.hyperlink}`, "_blank");
+                  }}
+                />
               </Typography>
-              <Divider className={classes.divider} middle/>
+            </IconButton>
+          </Tooltip>
+          <Typography className={classes.cardText}>
+            {item.description}
+          </Typography>
+          <Divider className={classes.divider} middle />
         </div>
       </div>
     );
