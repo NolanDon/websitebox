@@ -12,7 +12,7 @@ export const projects = [
     image:
       "https://user-images.githubusercontent.com/48977789/69458027-a9b22280-0d2b-11ea-8c8c-79154d504f80.png",
     hyperlink: "https://github.com/NolanDon/schoodle",
-    description: "Javascript app built with use of CDN and JQuery",
+    description: "JavaScript app built with use of CDN and JQuery",
   },
   {
     title: "Junglefy",
