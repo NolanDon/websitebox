@@ -22,7 +22,7 @@ const useStyles = makeStyles({
 const DialogContent = withStyles((theme) => ({
   root: {
     backgroundColor: "#B0B0B0",
-    padding: theme.spacing(2),
+    padding: theme.spacing(2)
   },
 }))(MuiDialogContent);
 
