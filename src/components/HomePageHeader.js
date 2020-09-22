@@ -7,17 +7,21 @@ import Typist from "react-typist";
 import CustomizedDialogs from './setDialogOpen';
 
 const useStyles = makeStyles({
+  container: {
+    paddingTop: '110px',
+    width: '400px',
+    position: 'fixed'
+  },
   name: {
     display: "flex",
-    paddingTop: "100px",
+    padding: "100px 0px 0px 15px",
     fontSize: "50px",
-    fontFamily: 'Baloo 2, cursive',
-    color: 'white'
+    color: 'white',
+    fontFamily: 'Moon 2.0',
   },
   paragraph: {
     display: "flex",
     paddingTop: "40px",
-    fontFamily: 'Baloo 2, cursive',
     fontSize: "20px",
     color: 'white'
   },
@@ -27,7 +31,7 @@ const HomePageHeader = () => {
   const classes = useStyles();
 
   return (
-    <Grid item xs={12} md={8}>
+    <Grid className={classes.container}>
       <Divider />
       <Typography className={classes.name}>HI, I'M NOLAN</Typography>
       <Typist className={classes.paragraph}>

@@ -6,7 +6,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-image: url("barkleaf.jpg");
+  background-image: url("./components//images//slide-dark.jpg");
   background-size: cover;
   background-repeat:no-repeat;
   height: 100vh;

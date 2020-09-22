@@ -7,7 +7,7 @@ import HomePageHeader from "./HomePageHeader";
 const useStyles = makeStyles({
   body: {
     display: "flex",
-    justifyContent: "flex-start",
+    justifyContent: "center",
   }
 });
 

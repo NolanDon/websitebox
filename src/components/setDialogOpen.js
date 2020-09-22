@@ -1,5 +1,5 @@
 import React from "react";
-import { withStyles, makeStyles } from "@material-ui/core/styles";
+import { withStyles, makeStyles, rgbToHex } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import Dialog from "@material-ui/core/Dialog";
 import MuiDialogContent from "@material-ui/core/DialogContent";
@@ -7,9 +7,15 @@ import ProjectCard from "./ProjectDisplayCard";
 
 const useStyles = makeStyles({
   button: {
+    position: 'static',
     fontFamily: 'Baloo 2, cursive',
     color: "black",
     marginTop: "40px",
+    marginLeft: '28%',
+    background: '#B0B0B0',
+    '&:hover': {
+      background: '#D3D3D3',
+    }
   },
 });
 
