@@ -16,11 +16,12 @@ const useStyles = makeStyles({
     '&:hover': {
       background: '#D3D3D3',
     }
-  },
+  }
 });
 
 const DialogContent = withStyles((theme) => ({
   root: {
+    backgroundColor: '#B0B0B0',
     padding: theme.spacing(2),
   },
 }))(MuiDialogContent);
@@ -53,10 +54,6 @@ export default function CustomizedDialogs() {
         <DialogContent dividers>
           <ProjectCard />
         </DialogContent>
-
-        <Button autoFocus onClick={handleClose} color="primary">
-          Back
-        </Button>
       </Dialog>
     </div>
   );
