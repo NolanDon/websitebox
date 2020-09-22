@@ -9,20 +9,22 @@ import CustomizedDialogs from './setDialogOpen';
 const useStyles = makeStyles({
   container: {
     paddingTop: '110px',
-    width: '400px',
+    width: 'auto',
     position: 'fixed'
   },
   name: {
     display: "flex",
-    padding: "100px 0px 0px 15px",
+    paddingTop: "100px",
+    paddingBottom: "10px",
     fontSize: "50px",
     color: 'white',
     fontFamily: 'Moon 2.0',
   },
   paragraph: {
+    position: 'fixed',
     display: "flex",
-    paddingTop: "40px",
     fontSize: "20px",
+    width: "80%",
     color: 'white'
   },
 });
