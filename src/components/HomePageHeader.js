@@ -24,7 +24,8 @@ const useStyles = makeStyles({
     position: 'fixed',
     display: "flex",
     fontSize: "20px",
-    width: "80%",
+    width: "90%",
+    paddingLeft: '10px',
     color: 'white'
   },
 });
@@ -37,7 +38,7 @@ const HomePageHeader = () => {
       <Divider />
       <Typography className={classes.name}>HI, I'M NOLAN</Typography>
       <Typist className={classes.paragraph}>
-        Full Stack Developer from Calgary, Alberta.
+        Full Stack Developer from Calgary.
       </Typist>
       <CustomizedDialogs />
     </Grid>
