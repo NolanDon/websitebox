@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles, Typography, Divider } from "@material-ui/core";
 import { projects } from "./Projects";
-import codeIcon from "./images/source-code.png";
+import codeIcon from "./images/icons/source-code.png";
 import IconButton from "@material-ui/core/IconButton";
 import Tooltip from "@material-ui/core/Tooltip";
 
@@ -14,15 +14,20 @@ const useStyles = makeStyles({
     fontSize: "20px",
     color: "black",
     textAlign: "center",
+    fontFamily: "monospace",
+    fontWeight: '500'
   },
   icon: {
     width: "20px",
     height: "20px",
   },
   cardText: {
-    fontSize: "15px",
+    paddingTop: "15px",
+    fontSize: "10px",
     color: "black",
     textAlign: "center",
+    fontFamily: "monospace",
+    fontWeight: '600'
   },
   image: {
     width: "80%",
@@ -31,7 +36,18 @@ const useStyles = makeStyles({
   },
   divider: {
     height: "4px",
-  }
+    background: 'black',
+    opacity: '50%',
+  },
+  button: {
+    border: "none",
+    color: "white",
+    background: "black",
+    borderRadius: "10%",
+    height: "25px",
+    width: "40px",
+    marginBottom: "15px",
+  },
 });
 
 const ProjectCard = () => {
@@ -41,7 +57,7 @@ const ProjectCard = () => {
     return (
       <div>
         <div className={classes.card}>
-          <Typography className={classes.cardTitle}>{item.title}</Typography>
+          <Typography className={classes.cardTitle}>{item.title.toUpperCase()}</Typography>
           <Typography>
             <img
               src={item.image}
@@ -64,7 +80,22 @@ const ProjectCard = () => {
             </IconButton>
           </Tooltip>
           <Typography className={classes.cardText}>
-            {item.description}
+            {item.description.toUpperCase()}
+          </Typography>
+          <Typography className={classes.cardText}>
+            {item.link ? (
+              <Tooltip title="View Demo">
+                <button
+                  className={classes.button}
+                  onClick={() => window.open(`${item.link}`, "_blank")}
+                >
+                  live
+                  {classes.link}
+                </button>
+              </Tooltip>
+            ) : (
+              ""
+            )}
           </Typography>
           <Divider className={classes.divider} middle />
         </div>

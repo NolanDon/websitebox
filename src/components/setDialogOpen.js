@@ -7,11 +7,14 @@ import ProjectCard from "./ProjectDisplayCard";
 
 const useStyles = makeStyles({
   button: {
-    position: "static",
-    fontFamily: "Baloo 2, cursive",
+    position: "sticky",
+    width: '130px',
+    height: '50px',
+    fontFamily: "monospace",
+    fontWeight: "500",
     color: "black",
-    marginTop: "80px",
-    marginLeft: "25%",
+    marginTop: "40px",
+    marginLeft: "28%",
     background: "#B0B0B0",
     "&:hover": {
       background: "#D3D3D3",
@@ -22,7 +25,7 @@ const useStyles = makeStyles({
 const DialogContent = withStyles((theme) => ({
   root: {
     backgroundColor: "#B0B0B0",
-    padding: theme.spacing(2)
+    padding: theme.spacing(2),
   },
 }))(MuiDialogContent);
 

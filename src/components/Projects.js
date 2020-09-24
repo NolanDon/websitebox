@@ -1,56 +1,63 @@
+import bookswap from './images/projectimages/bookswap.png';
+import junglefy from './images/projectimages/junglefy.png';
+import railsWebsite from './images/projectimages/railswebsite.png';
+import scheduler from './images/projectimages/scheduler.png';
+import schoodle from './images/projectimages/schoodle.png';
+import tinyapp from './images/projectimages/tinyapp.jpg';
+import tweeter from './images/projectimages/tweeter.png';
+
 export const projects = [
   {
     title: "Bookswap",
-    image:
-      "https://user-images.githubusercontent.com/48977789/73147349-423e8900-4074-11ea-83dd-4291b6a44604.png",
+    image: bookswap,
     hyperlink: "https://github.com/NolanDon/BookSwap",
     description:
       "Ruby on Rails - Full-Stack - Book trading app built using google maps & book API",
+      link: ''
   },
   {
     title: "Schoodle",
-    image:
-      "https://user-images.githubusercontent.com/48977789/69458027-a9b22280-0d2b-11ea-8c8c-79154d504f80.png",
+    image: schoodle,
     hyperlink: "https://github.com/NolanDon/schoodle",
-    description: "JavaScript app built with use of CDN and JQuery",
+    description: "Doodle clone - JavaScript app built with use of a calendar CDN and JQuery",
+    link: ''
   },
   {
     title: "Junglefy",
-    image:
-      "https://user-images.githubusercontent.com/48977789/71332020-cb045b00-24f1-11ea-8ec6-d0b3001827e9.png",
+    image: junglefy,
     hyperlink: "https://github.com/NolanDon/Rails-Project",
     description:
       "Ruby on Rails - Full-Stack - E-commerce Website - Checkout enabled with stripe demo",
+      link: "http://junglefy.herokuapp.com"
   },
   {
     title: "Scheduler",
-    image:
-      "https://user-images.githubusercontent.com/48977789/69908016-3731ea00-139e-11ea-9959-20ad66738a0d.png",
+    image: scheduler,
     hyperlink: "https://github.com/NolanDon/Scheduler",
     description: "ReactJS - Full-Stack - Appointment Scheduler",
+    link: ''
   },
   {
     title: "Rails Website",
-    image:
-      "https://user-images.githubusercontent.com/48977789/89699114-1d0fba80-d8e2-11ea-87b8-7f4d2f74a9de.png",
-    hyperlink: "https://github.com/NolanDon",
+    image: railsWebsite,
+    hyperlink: "http://nolandon.heroku.app",
     description:
-      "Ruby on Rails - Static HTML5 portfolio website",
+      "Ruby on Rails - Static HTML5 portfolio website hosted",
+      link: "http://nolandon.heroku.app"
   },
   {
     title: "Tweeter",
-    image:
-      "https://user-images.githubusercontent.com/48977789/70494126-5a0f7d00-1ac7-11ea-93f4-5d01947f3e12.png",
+    image: tweeter,
     hyperlink: "https://github.com/NolanDon/tweeter",
     description:
       "JavaScript, JQuery, Ajax - Single-page Twitter clone",
+      link: ''
   },
   {
     title: "Tinyapp",
-    image:
-      "https://user-images.githubusercontent.com/48977789/68065856-bcb97000-fcf4-11e9-95dc-b5032ef39b50.jpg",
-    hyperlink: "https://github.com/NolanDon/tinyapp",
+    image: tinyapp,
     description:
       "Node and Express app - Allows users to shorten long URLs",
+      link: ''
   },
 ];

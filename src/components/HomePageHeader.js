@@ -4,29 +4,29 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 import Typist from "react-typist";
-import CustomizedDialogs from './setDialogOpen';
+import CustomizedDialogs from "./setDialogOpen";
 
 const useStyles = makeStyles({
   container: {
-    paddingTop: '110px',
-    width: 'auto',
-    position: 'fixed'
+    paddingTop: "210px",
+    width: "auto",
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+    marginRight: "40px"
   },
   name: {
-    display: "flex",
-    paddingTop: "100px",
-    paddingBottom: "10px",
-    fontSize: "50px",
-    color: 'white',
-    fontFamily: 'Moon 2.0',
+    fontSize: "3rem",
+    color: "white",
+    fontFamily: "monospace",
+    margin: "30px 0px 30px 0px"
   },
   paragraph: {
-    position: 'fixed',
-    display: "flex",
     fontSize: "20px",
-    width: "90%",
-    paddingLeft: '10px',
-    color: 'white'
+    textAlign: "center",
+    width: "320px",
+    color: "white",
+    fontFamily: "monospace",
   },
 });
 
@@ -38,7 +38,7 @@ const HomePageHeader = () => {
       <Divider />
       <Typography className={classes.name}>HI, I'M NOLAN</Typography>
       <Typist className={classes.paragraph}>
-        Full Stack Developer from Calgary.
+        Full Stack Developer from Calgary, Alberta.
       </Typist>
       <CustomizedDialogs />
     </Grid>
