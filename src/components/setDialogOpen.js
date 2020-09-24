@@ -14,7 +14,7 @@ const useStyles = makeStyles({
     fontWeight: "500",
     color: "black",
     marginTop: "40px",
-    marginLeft: "28%",
+    marginLeft: "26%",
     background: "#B0B0B0",
     "&:hover": {
       background: "#D3D3D3",
