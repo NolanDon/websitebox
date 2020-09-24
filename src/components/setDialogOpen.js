@@ -7,9 +7,9 @@ import ProjectCard from "./ProjectDisplayCard";
 
 const useStyles = makeStyles({
   button: {
-    position: "sticky",
     width: '130px',
     height: '50px',
+    fontSize: "1.05em",
     fontFamily: "monospace",
     fontWeight: "500",
     color: "black",
