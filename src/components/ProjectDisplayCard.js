@@ -23,7 +23,7 @@ const useStyles = makeStyles({
   },
   cardText: {
     paddingTop: "15px",
-    fontSize: "10px",
+    fontSize: "14px",
     color: "black",
     textAlign: "center",
     fontFamily: "monospace",
