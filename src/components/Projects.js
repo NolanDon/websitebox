@@ -40,10 +40,10 @@ export const projects = [
   {
     title: "Rails Website",
     image: railsWebsite,
-    hyperlink: "http://nolandon.heroku.app",
+    hyperlink: "http://nolandon.herokuapp.com",
     description:
       "Ruby on Rails - Static HTML5 portfolio website hosted",
-      link: "http://nolandon.heroku.app"
+      link: "http://nolandon.herokuapp.com"
   },
   {
     title: "Tweeter",
