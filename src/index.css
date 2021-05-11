@@ -8,7 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   background-image: url("./components//images//wallpaperimages//slide-dark.jpg");
   background-size: cover;
-  background-repeat:no-repeat;
+  background-repeat:round;
   height: 100vh;
   -moz-osx-font-smoothing: grayscale;
 }
