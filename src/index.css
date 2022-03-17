@@ -17,3 +17,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* FOR THE BUTTONS */
+.buttonBox {
+  margin-top: 15%;
+  justify-content: center;
+}
+.color {
+	width: 350px;
+	margin: 0 auto;
+}
+
+.btn.red, .btn-two.red {background-color: #3d4045;}
+
+.rounded {
+  border-radius: 10px;
+}
+
+/* default button style */
+.btn {
+	position: relative;
+	border: 0;
+	padding: 15px 25px;
+	display: inline-block;
+	text-align: center;
+	color: white;
+  font-family: monospace;
+  font-size: 15px;
+}
+/* color classes for .btn */
+
+.btn.red {box-shadow:0px 4px 0px #45484f;}
+.btn.red:active {box-shadow: 0 0 #45484f; background-color:#45484f;}

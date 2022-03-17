@@ -12,7 +12,8 @@ const useStyles = makeStyles({
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
-    marginRight: "40px"
+    marginRight: "40px",
+    alignItems: "center"
   },
   name: {
     fontSize: "3rem",

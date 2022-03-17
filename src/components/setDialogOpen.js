@@ -1,6 +1,7 @@
 import React from "react";
 import { withStyles, makeStyles } from "@material-ui/core/styles";
-import Button from "@material-ui/core/Button";
+import ProjectButton from "./ProjectButton"
+// import Button from "@material-ui/core/Button";
 import Dialog from "@material-ui/core/Dialog";
 import MuiDialogContent from "@material-ui/core/DialogContent";
 import ProjectCard from "./ProjectDisplayCard";
@@ -34,6 +35,7 @@ export default function CustomizedDialogs() {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
+    console.log("set open to true")
     setOpen(true);
   };
   const handleClose = () => {
@@ -42,19 +44,16 @@ export default function CustomizedDialogs() {
 
   return (
     <div>
-      <Button
-        variant="contained"
-        onClick={handleClickOpen}
-        className={classes.button}
-      >
-        View Projects
-      </Button>
+      <div onClick={handleClickOpen}>
+        <ProjectButton  />
+      </div>
       <Dialog
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"
         open={open}
       >
         <DialogContent dividers>
+          
           <ProjectCard />
         </DialogContent>
       </Dialog>
