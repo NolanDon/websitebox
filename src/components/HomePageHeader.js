@@ -35,9 +35,9 @@ const HomePageHeader = () => {
 
   return (
     <Grid className={classes.container}>
-      <Typography className={classes.name}>HI, I'M NOLAN</Typography>
+      <Typography className={classes.name}>We are Box App Developers</Typography>
       <Typist className={classes.paragraph}>
-        Full Stack Developer from Calgary, Alberta.
+        Where your ideas will come to life.
       </Typist>
       <CustomizedDialogs />
     </Grid>
