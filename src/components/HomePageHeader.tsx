@@ -1,9 +1,10 @@
-import React from "react";
+import * as React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
+import { FontStyle } from "./types"
 import Typist from "react-typist";
-import CustomizedDialogs from "./setDialogOpen";
+import CustomizedDialogs from './setDialogOpen';
 
 const useStyles = makeStyles({
   container: {
@@ -18,7 +19,7 @@ const useStyles = makeStyles({
   name: {
     fontSize: "3rem",
     color: "white",
-    fontFamily: "monospace",
+    fontFamily: FontStyle.GLOBAL,
     margin: "30px 0px 30px 0px"
   },
   paragraph: {
@@ -26,7 +27,7 @@ const useStyles = makeStyles({
     textAlign: "center",
     width: "320px",
     color: "white",
-    fontFamily: "monospace",
+    fontFamily: FontStyle.GLOBAL,
   },
 });
 
