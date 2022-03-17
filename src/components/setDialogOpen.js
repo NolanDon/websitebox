@@ -44,9 +44,9 @@ export default function CustomizedDialogs() {
 
   return (
     <div>
-      <div onClick={handleClickOpen}>
+      {/* <div onClick={handleClickOpen}>
         <ProjectButton  />
-      </div>
+      </div> */}
       <Dialog
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"

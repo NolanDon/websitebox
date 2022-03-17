@@ -28,16 +28,16 @@ const useStyles = makeStyles({
     color: "white",
     fontFamily: "monospace",
   },
-});//
+});
 
 const HomePageHeader = () => {
   const classes = useStyles();
 
   return (
     <Grid className={classes.container}>
-      <Typography className={classes.name}>We are Box App Developers</Typography>
+      <Typography className={classes.name}>Box App Developers</Typography>
       <Typist className={classes.paragraph}>
-        Where your ideas will come to life.
+        Where your ideas come to life.
       </Typist>
       <CustomizedDialogs />
     </Grid>
